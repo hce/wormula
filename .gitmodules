@@ -1,0 +1,6 @@
+[submodule "wasmer"]
+	path = wasmer
+	url = https://github.com/wasmerio/wasmer.git
+[submodule "wormrtl"]
+	path = wormrtl
+	url = https://github.com/hce/wormrtl.git

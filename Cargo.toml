@@ -1,0 +1,25 @@
+[package]
+name = "wormula"
+version = "0.1.0"
+authors = ["Hans-Christian Esperer <hc@hcesperer.org>"]
+edition = "2018"
+license = "MIT"
+build = "build.rs"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "wormula"
+path = "src/lib.rs"
+
+[[bin]]
+name = "we"
+path = "src/main.rs"
+
+[dependencies]
+wasmer-runtime = { path = "wasmer/lib/runtime" }
+# wasmer-llvm-backend = { path = "wasmer/lib/llvm-backend" }
+
+byteorder = "1.3.2"
+nom = "5"
+parity-wasm = "0.39"
+
